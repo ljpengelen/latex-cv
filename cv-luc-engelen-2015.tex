@@ -1,0 +1,181 @@
+\documentclass[a4paper,10pt,article]{memoir}
+\usepackage{xcolor,mdwlist,longtable}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage[dutch]{babel}
+\usepackage{microtype}
+\usepackage{xspace,graphicx,paralist}
+
+\newcommand{\dash}[0]{\rule[0.5ex]{0.7em}{0.55pt}\xspace}
+\newcommand{\hiddenat}[0]{\hspace{.08em}\raisebox{-2pt}{\includegraphics[width=.8em]{at}}\hspace{.08em}}
+\newcommand{\hiddendot}[0]{\hspace{.08em}\includegraphics[width=.12em]{dot}\hspace{.08em}}
+
+\renewcommand{\familydefault}{bch}
+\setlength{\beforechapskip}{0pt}
+\setlength{\LTpre}{0pt}
+\tightlists*
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{8.6em}}
+\newcolumntype{R}{p{37em}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\hypersetup{
+  pdfauthor={Luc Engelen},
+  pdftitle={Curriculum Vitae}
+}
+\pagestyle{empty}
+
+\begin{document}
+\noindent
+\begin{center}
+{\huge Curriculum Vitae}\\[0.8em]
+{\Large Dr.ir. L.J.P. Engelen}\\[0.3em]
+\today\\[2.6em]
+\end{center}
+
+\chapter*{Personalia}
+\begin{longtable}{L!{\VRule}R}
+Naam           & Luc Engelen\\
+Adres          & Straatnaam 123, 1234 XX, Voerendaal\\
+E-mailadres    & example\hiddenat{}example\hiddendot{}com \\
+Telefoonnummer & 06-12345678\\
+Geboorteplaats & Nijmegen\\
+Geboortedatum  & 7 oktober 1981
+\end{longtable}
+
+\chapter*{Werkervaring}
+\begin{longtable}{L!{\VRule}R}
+2014 -- heden & \textbf{Softwareontwikkelaar}\\
+              & ISAAC \dash Eindhoven\\
+              & \hspace{0.5em} \emph{Java EE:}
+                \begin{itemize}
+                \item Ontwikkeling, uitbreiding en onderhoud van o.a.\ zelfbedieningsportalen en aanvraagstraten voor Engelse, Nederlandse en Deense aanbieders van financi\"ele producten
+                \end{itemize}
+                \vspace{5px}
+                \hspace{0.5em} \emph{Objective C en Swift:}
+                \begin{itemize}
+                \item Ontwikkeling van iOS SDK voor integratie van diverse betalingsmethoden voor een Nederlandse payment service provider
+                \item Proof-of-concept app voor bediening van gemotoriseerde TV-steun
+                \end{itemize}\\
+
+2012 -- 2014 & \textbf{Postdoc}\\
+              & Laboratory for Quality Software (LaQuSo) \dash Eindhoven\\
+              & \hspace{0.5em} \emph{Onderzoeksgebied:}
+                \begin{itemize}
+                \item \emph{Cre\"eren van een open platform voor de certificatie van safety-critical systemen binnen het Europese FP7 project OPENCOSS}
+                    \begin{itemize}
+                    \item Verbeteren van inzicht in veiligheidsstandaarden door (meta)modellering
+                    \item Koppeling van veiligheidsstandaarden en bedrijfsstandaarden met behulp van een domeinspecifieke taal
+                    \end{itemize}
+                \end{itemize}
+                \vspace{5px}
+                \hspace{0.5em} \emph{Onderwijstaken:}
+                \begin{itemize}
+                \item Dagelijkse begeleiding promovenda
+                \item Coaching van bachelorstudenten
+                \item Instructeur, tutor en beoordelaar bij diverse vakken
+                \end{itemize}\\
+
+2008 -- 2012 & \textbf{Promovendus}\\
+             & Software Engineering and Technology groep \dash TU/e \dash Eindhoven\\
+             & \hspace{0.5em} \emph{Onderzoeksgebied:}
+               \begin{itemize}
+               \item \emph{Model-driven software engineering}
+               \begin{itemize}
+               \item Ontwerpen, implementeren en correct bewijzen van modeltransformaties
+               \item Ontwerpen en implementeren van domein-specifieke talen
+               \item Simulatie en verificatie van formele modellen
+               \end{itemize}
+               \end{itemize}
+               \vspace{5px}
+               \hspace{0.5em} \emph{Onderwijstaken:}
+               \begin{itemize}
+               \item \emph{Verantwoordelijk voor praktische opdrachten en gastcolleges bij diverse vakken}
+               \item \emph{Begeleiding van afstudeerders}
+               \end{itemize}\\
+
+2006 -- 2008 & \textbf{Junior onderzoeker}\\
+             & TU/e en ASML \dash Eindhoven en Veldhoven\\
+             & \hspace{0.5em} \emph{Onderzoeksgebied:}
+               \begin{itemize}
+               \item \emph{Model-driven software engineering; vertaling UML modellen naar formele talen}
+               \end{itemize}\\
+
+2003         & \textbf{Softwareontwikkelaar}\\
+             & ProRail \dash Eindhoven\\
+             & \hspace{0.2em}\begin{tabular}{p{35em}}
+                 \emph{Voortzetten van het software engineering project uit de kandidaatsfase van mijn studie Technische Informatica}
+               \end{tabular}
+\end{longtable}
+
+\newpage
+
+\chapter*{Opleiding}
+\begin{longtable}{L!{\VRule}R}
+2000 -- 2006 & \textbf{Technische Informatica}\\
+             & TU/e \dash Eindhoven\\
+             & \hspace{0.5em} \emph{Afstudeeropdracht \dash Sectie Ontwerp en Analyse van Systemen:}
+               \begin{itemize}
+               \item Implementatie van een op binary decision diagrams gebaseerde prover en een aantal gerelateerde tools voor de toolset van de specificatietaal mCRL2
+               \end{itemize}
+               \vspace{5px}
+               \hspace{0.5em}\parbox{36em}{\emph{Stageopdracht \dash Sectie Software Construction:}
+               \begin{itemize}
+               \item Ontwerp en implementatie van een editor voor metronetwerken volgens de design-by-contract aanpak
+               \end{itemize}}
+               \vspace{5px}
+               \hspace{0.5em} \emph{Software engineering project \dash ProRail:}
+               \begin{itemize}
+               \item Ontwerpen en implementatie van een treinsimulator
+                 \begin{itemize}
+                 \item die de mogelijkheid biedt om bestaande trajecten af te leggen
+                 \item met een realistische 3D weergave van een cockpit en de omgeving, realistische besturing, real-time communicatiemiddelen en een radar
+                 \end{itemize}
+               \end{itemize}
+               \par\\
+2003 -- 2004 & \textbf{Keuzevakken psychologie en informatica}\\
+             & Leopold Franzens Universiteit \dash Innsbruck \dash Oostenrijk\\
+             & \hspace{0.2em}\begin{tabular}{p{35em}}
+                 \emph{Vakken: Einf\"uhrung in die Psychologie, Stress am Arbeitsplatz, Licht und Farbe f\"ur Informatiker, Deutsch als Fremdsprache, Entwicklungspsychologie des Kindesalters, Nonverbale Kommunikation}
+               \end{tabular}
+               \par\\[5px]
+1994 -- 2000 & \textbf{Atheneum}\\
+             & Jeanne D{'}Arc College \dash Maastricht\\
+             & \hspace{0.2em}\begin{tabular}{p{35em}}
+                 \emph{Eindexamenvakken: Nederlands, Engels, aardrijkskunde, biologie, wiskunde B,}\\
+                 \emph{natuurkunde en scheikunde}
+               \end{tabular}
+\end{longtable}
+
+\chapter*{Nevenactiviteiten en bijbanen}
+\begin{longtable}{L!{\VRule}R}
+2006 -- heden & \textbf{Volleybaltrainer en -coach}\\
+              & Diverse verenigingen \dash regio Eindhoven\\[5px]
+2000 -- 2012  & \textbf{Voorzitter, secretaris, algemeen bestuurslid en lid van diverse commissies}\\
+              & Volleybalvereniging Tamar \dash Eindhoven\\[5px]
+2002 -- 2003  & \textbf{Raadslid faculteitsraad en studentenraad}\\
+              & Faculteit Wiskunde en Informatica \dash TU/e \dash Eindhoven\\[5px]
+1997 -- 2004  & \textbf{Diverse bijbanen als student en scholier}\\
+              & Barkeeper, spoelkeuken- en horecamedewerker
+\end{longtable}
+
+\chapter*{Computergerelateerde kennis}
+\begin{longtable}{L!{\VRule}R}
+Besturingssystemen          & iOS, Linux en Windows\\
+Programmeertalen            & C, C{}\verb!++!, Java (EE), Javascript, Objective C, Object Pascal (Delphi), Perl, PHP en Python\\
+Modelleertalen              & $\mu$CRL, mCRL2, POOSL en Promela\\
+Versiebeheer                & Git en Subversion\\
+Generieke~taal\-technologie & ASF+SDF, ATL, Eclipse Modeling Framework, Epsilon, Eugenia, Xpand, Xtend en Xtext\\
+Server                      & JBoss EAP en WebLogic\\
+\end{longtable}
+
+\chapter*{Talenkennis}
+\begin{longtable}{L!{\VRule}R}
+Nederlands & Moedertaal\\
+Engels     & Goed\\
+Duits      & Redelijk tot goed\\
+\end{longtable}
+
+\chapter*{Hobby's}
+Produceren van elektronische muziek, snowboarden en (beach)volleybal
+
+\end{document}
