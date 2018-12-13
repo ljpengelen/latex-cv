@@ -6,7 +6,7 @@ I'm open sourcing it for anyone interested in making a similar document.
 It takes time and effort to get to know LaTeX, but the quality of the documents you can create with it is amazing.
 
 To generate a PDF from the `.tex` file, install LaTeX and execute `pdflatex cv-luc-engelen-2015.tex`.
-The [end result](https://github.com/ljpengelen/latex-cv/raw/master/cv-luc-engelen-2015.pdf) looks like this:
+The [end result](https://github.com/ljpengelen/latex-cv/blob/master/cv-luc-engelen-2015.pdf) looks like this:
 
 ![Front](https://github.com/ljpengelen/latex-cv/raw/master/cv-luc-engelen-2015-front.png)
 
